@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/frontend/styles/login.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/2ea8344aaa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="form-wrapper">
+        <div class="logo-form">
+            <a href="#" title="ELLNEXT">
+                <img src="/frontend/assets/logo.png" alt="ELLNEXT" class="logo">
+            </a>
+        </div>
+
+        <div class="input-form">
+            <input type="email" id="email" name="email" class="input-field" placeholder="Seu Email" required autocomplete="off">
+            <label for="email" class="input-label">Email</label>
+            <i class="fa-solid fa-envelope input-icon"></i>
+        </div>
+
+        <div class="input-form">
+            <input type="password" id="senha" name="senha" class="input-field" placeholder="Sua Senha" title="Mínimo de 8 caracteres, pelo menos 1 letra, 1 número e 1 caractere especial" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required autocomplete="off">
+            <label for="senha" class="input-label">Senha</label>
+            <i class="fa-solid fa-lock input-icon" id="togglePassword"></i>
+        </div>
+
+        <input type="submit" class="input-submit">
+        <!-- 
+        <div class="socials-row">
+            <a href="#" title="Entrar com Google">
+                <img src="./assets/google.png" alt="Google">
+                Entrar com o Google
+            </a>
+        </div>
+        -->
+        <div class="form-account">
+            <div class="account-row">
+                <span>Não tem uma conta?</span>
+                <a href="#" title="Criar uma conta">Inscrever-se</a>
+            </div>
+        </div>
+    </form>
+
+    <script src="/frontend/scripts/login.js"></script>
+</body>
+</html>

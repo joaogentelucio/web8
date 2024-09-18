@@ -26,19 +26,33 @@ body {
     width: 300px;
 }
 
+.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+
+}
+
 .btn-expandir {
-    width: 100%;
-    padding-left: 10px;
-    margin-bottom: 40px;
+    position: absolute; 
+    right: 10px; 
+    top: 20px; 
+    color: #fff;
+    font-size: 24px;
+    transition: transform .3s; 
+
+
 }
 
 .btn-expandir > i {
     color: #fff;
     font-size: 24px;
+    transition: transform 10s;
 }
+
 
 ul {
     height: 100%;
+    margin-top: 20px;
     list-style-type: none;
 }
 
@@ -71,12 +85,41 @@ ul li.item-menu a .txt-link {
 
 }
 
-.menu-lateral.expandir .txt-link {
-    margin-left: 40px;
-    opacity: 1;
-
-}
-
 ul li.item-menu a .icon > i {
     font-size: 30px;
+}
+
+.ajustes {
+    margin-top: -60px; 
+    padding: 20px 0; 
+    margin-left: 10px;
+}
+
+.ajustes a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+
+.ajustes .ajustes-icon {
+    font-size: 30px; 
+    margin-right: 40px; 
+}
+
+.ajustes .ajustes-txt-link {
+    font-size: 20px; 
+    opacity: 0; 
+    transform: translateX(50px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-lateral.expandir .ajustes .ajustes-txt-link {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ajustes:hover {
+    background-color: #1C1C1C; 
 }
